@@ -1,0 +1,114 @@
+body {
+  margin: auto;
+  padding-top: 3rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,0.7567401960784313) 0%, rgba(54,54,54,1) 50%, rgba(0,0,0,1) 100%);
+  font-family: sans-serif;
+}
+b {
+  font-size: 3rem;
+}
+* {
+  color: #bbb;
+  text-align: center;
+}
+.carta {
+  width: 40vw;
+  height: 40vw;
+  margin: auto;
+  padding: 4rem;
+  border-radius: 1rem;
+  color:white;
+  background: rgba(255, 255, 255, .3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+
+.buttonCard {
+  overflow: hidden;
+  padding: 1vw;
+  width: 30vw;
+  height: 30vw;
+  margin: auto;
+  
+  background: rgba(30,30,30, 0.6); 
+  border: 2px solid rgba(20,20,20,0.6);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: 33% 33% 33%; 
+  grid-template-columns: 33% 33% 33%; 
+}
+
+
+
+.led {
+  padding-top: 30%;
+  margin: 15px;
+  border: none;
+  color: #dad;
+  cursor: pointer;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  padding-bottom: 40%;
+}
+@media only screen and (max-width: 1400px) {
+  .carta {
+    width:  60vw;
+    height: 60vw;
+  }
+  body {
+    padding: 0.5rem;
+    padding-top: 5vw;
+    margin: 0;
+  }
+  .buttonCard {
+    margin-top: 5vw;
+    width:  45vw;
+    height: 45vw;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .led {
+    padding-top: 30%;
+    font-size: 60px;
+    width: 90%;
+    height: 90%;
+  }
+  .led:after {
+    content: "";
+  display: block;
+}
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .carta {
+    width: 80vw;
+    height: 80vw;
+  }
+  body {
+    padding-top: 40vw;
+    margin: 0;
+  }
+  .buttonCard {
+    width: 70vw;
+    height: 70vw;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+  .led {
+    padding-top: 30%;
+    font-size: 60px;
+    width: 90%;
+    height: 90%;
+  }
+  .led:after {
+    content: "";
+  display: block;
+}
+}
+
+
